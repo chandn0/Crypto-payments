@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Crypto Payments Website</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #1f1f1f; /* Dark background color */
+            color: #fff; /* Light text color */
+        }
+
+        header {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 1em;
+        }
+
+        section {
+            margin: 20px;
+            padding: 20px;
+            background-color: #333; /* Dark background color */
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(255, 255, 255, 0.1); /* Light shadow color */
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+        }
+
+        th, td {
+            padding: 12px;
+            text-align: left;
+            border-bottom: 1px solid #ddd;
+            color: #fff; /* Light text color */
+        }
+
+        th {
+            background-color: #555; /* Darker background color for headers */
+        }
+
+        h2 {
+            color: #fff; /* Light text color */
+        }
+
+        a {
+            color: #55aaff; /* Link color */
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+
+        footer {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 0.02em;
+            /* position: fixed; */
+            bottom: 0;
+            width: 100%;
+        }
+
+        footer a {
+            color: #55aaff; /* Link color */
+        }
+
+        footer a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Crypto Payments</h1>
+    </header>
+
+    <section>
+        <h2>Crypto Onramps</h2>
+        <table>
+            <tr>
+                <th>Platform</th>
+                <th>Fees</th>
+                <th>Payment Methods</th>
+                <th>Availability</th>
+            </tr>
+            <!-- Add rows for each onramp -->
+            <tr>
+                <td><a href="https://paybis.com/" target="_blank">Paybis</a></td>
+                <td>0.99% for ACH, 2.49% for cards</td>
+                <td>Debit/credit cards, Google Pay, Apple Pay, ACH transfer, Skrill</td>
+                <td>US, CA, DACH, Northern Europe & 180+ countries</td>
+            </tr>
+            <tr>
+                <td><a href="https://www.moonpay.com/" target="_blank">MoonPay</a></td>
+                <td>1-4.5% + dynamic blockchain fee</td>
+                <td>Cards, bank transfers, P2P</td>
+                <td>E.U. & 110+ countries</td>
+            </tr>
+            <tr>
+                <td><a href="https://changelly.com/" target="_blank">Changelly</a></td>
+                <td>3rd party used for fiat deposits</td>
+                <td>Cards, bank transfers</td>
+                <td>E.U. & 150+ countries</td>
+            </tr>
+            <tr>
+                <td><a href="https://www.binance.com/en" target="_blank">Binance</a></td>
+                <td>0-4%</td>
+                <td>Cards, bank transfers, 3rd party, e-wallet, P2P, ATMs</td>
+                <td>E.U. & 100+ countries</td>
+            </tr>
+            <tr>
+                <td><a href="https://www.bybit.com/en/" target="_blank">Bybit</a></td>
+                <td>0</td>
+                <td>Cards, bank transfers, 3rd party, P2P</td>
+                <td>E.U. & 110+ countries</td>
+            </tr>
+            <tr>
+                <td><a href="https://www.kraken.com/" target="_blank">Kraken</a></td>
+                <td>0-30 USD</td>
+                <td>Cards, digital wallet purchases, ACH online banking</td>
+                <td>E.U. & 190+ countries</td>
+            </tr>
+            <tr>
+                <td><a href="https://www.Coinbase.com/" target="_blank">Coinbase</a></td> 
+                <td>0-3.85%</td>
+                <td>Cards, bank transfers, payment services</td>
+                <td>E.U. CA, U.S., U.K.</td>
+            </tr>
+            <tr>
+                <td><a href="https://bitpay.com/" target="_blank" >BitPay</a></td>
+                <td>2%+25¢</td>
+                <td>Cards, Apple Pay</td>
+                <td>U.S. & 170+ countries</td>
+            </tr>
+            <!-- Repeat the above row structure for other onramps -->
+        </table>
+    </section>
+
+    <section>
+        <h2>Gas Fee</h2>
+        <table>
+            <tr>
+                <th>Network</th>
+                <th>Native Token Transfer (USD)</th>
+                <th>ERC20 Token Transfer</th>
+            </tr>
+            <!-- Add rows for each network -->
+            <tr>
+                <td>Ethereum</td>
+                <td>2</td>
+                <td>5.5494 USD</td>
+            </tr>
+            <tr>
+                <td>Arbitrum One</td>
+                <td>0.005</td>
+                <td>0.0146 USD</td>
+            </tr>
+            <tr>
+                <td>Optimism</td>
+                <td>0.005</td>
+                <td>0.0146 USD</td>
+            </tr>
+            <tr>
+                <td>Binance Smart Chain</td>
+                <td>0.016</td>
+                <td>0.0481 USD</td>
+            </tr>
+            <tr>
+                <td>Polygon</td>
+                <td>0.01</td>
+                <td>0.0293 USD</td>
+            </tr>
+            <!-- Repeat the above row structure for other networks -->
+        </table>
+    </section>
+
+    <section>
+        <h2>Crypto Payment Gateways & Processors</h2>
+        <table>
+            <tr>
+                <th>Name</th>
+                <th>Fees</th>
+                <th>Supported Cryptocurrencies</th>
+                <th>Supported Fiat Currencies</th>
+                <th>E-commerce Integrations</th>
+            </tr>
+            <!-- Add rows for each payment gateway -->
+            <tr>
+                <td><a href="https://bitpay.com/" target="_blank" >BitPay</a></td>
+                <td>From 1% + 25 cents to 2% + 25 cents</td> 
+                <td>15, including Bitcoin, Ethereum, and Litecoin</td>
+                <td>8, including USD, CAD, and EUR</td>
+                <td>14, including WooCommerce, Shopify, and Magento</td>
+            </tr>
+            <tr>
+                <td><a href="https://www.coinbase.com/commerce" target="_blank" >Coinbase Commerce</a></td>
+                <td>1%</td>
+                <td>150+, including Bitcoin, Ethereum, and Litecoin</td>
+                <td>100+, including USD, GBP, and EUR</td>
+                <td>Shopify, WooCommerce, Primer, and Jumpseller</td>
+            </tr>
+            <tr>
+                <td><a href="https://crypto.com/pay" target="_blank" >Crypto.com/Pay</a></td>
+                <td>$0</td> 
+                <td>Bitcoin, Ethereum, Cronos, USD Coin</td>
+                <td>USD, EUR, AUD, GBP</td>
+                <td>Shopify, WooCommerce, Opencart, Ecwid</td>
+            </tr>
+            <tr>
+                <td><a href="https://www.paypal.com/us/enterprise/industry-solutions/crypto" target="_blank" >Paypal</a></td>
+                <td>$0-$30 (PayPal fees), 3.49% + 49 cents</td>
+                <td>Bitcoin, Bitcoin Cash, Ethereum, and Litecoin</td>
+                <td>100+, including USD, CAD, and EUR</td>
+                <td>eBay, WooCommerce, Magento, Amazon</td>
+            </tr>
+            <tr>
+                <td><a href="https://www.alfacoins.com/" target="_blank" >alfacoins</a></td>
+                <td>0.99% (free for nonprofits)</td>
+                <td>7, including Bitcoin, Ethereum, and Litecoin</td>
+                <td>3, including USD, EUR, and RUB</td>
+                <td>9, including WooCommerce, Shopify, and PrestaShop</td>
+            </tr>
+            <!-- Repeat the above row structure for other payment gateways -->
+        </table>
+    </section>
+
+    <section>
+        <h2>Crypto Wallets</h2>
+        <ul>
+            <!-- Add list items for each crypto wallet -->
+            <li><a href="https://trustwallet.com/" target="_blank">Trust Wallet</a></li>
+            <li><a href="https://www.coinbase.com/wallet" target="_blank">Coinbase</a></li>
+            <li><a href="https://rainbow.me/" target="_blank">Rainbow</a></li>
+            <li><a href="https://metamask.io/" target="_blank">MetaMask</a></li>
+            <!-- Repeat the above list item structure for other wallets -->
+        </ul>
+    </section>
+    <footer>
+        <p>Suggest improvements and create PRs at <a href="https://github.com/your-username/your-repository" target="_blank">GitHub</a></p>
+    </footer>
+
+</body>
+</html>
